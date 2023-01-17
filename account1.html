@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😊 About me 😊</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url(https://wallpaperaccess.com/full/2381677.jpg);
+            background-size: cover;
+        }
+        #my{
+            float: left;
+            background-color: grey;
+            position: fixed;
+            background: linear-gradient( to right,red,orange,aqua,blue );
+            color:white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 100%;
+            width: 30%;
+            border-radius: 5px;
+            text-align: center;
+            overflow: scroll;
+        }
+        #my #image{
+            border-radius: 50%;
+        }
+        #btn{
+            background: linear-gradient(to right,orange,blue,aqua,green);
+            font-size: 30px;
+            border-radius: 10px 10px 0px 10px;
+            color: white;
+        }
+        #adv{
+            height: 200px;
+            width: 400px;
+        }
+        #my input{
+            border-radius: 5px;
+            outline:dashed;
+            height: 50px;
+            width: 250px;
+            color: aliceblue;
+            text-decoration:dotted;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+            border: none;
+            background: none;
+        }
+        button{
+        border: none;
+        width: 250px;
+        margin-top:10px ;
+        }
+        #center{
+            float: right;
+            border-bottom: unset;
+            border: unset;
+            display: flex;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+            text-align: center left;
+            align-items: center;
+            margin-right: 100px;
+            color: aliceblue;
+        }
+        a{
+            cursor: pointer;
+            color: azure;
+            text-decoration: none;
+            transition: 500ms;
+        }
+        a:hover{
+            border-bottom: 10px dashed aliceblue;
+        }
+        a:active{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        #df{
+        font-size: 50px;
+        margin-top: 20px;
+        border-bottom: 5px aqua dashed;
+        border-radius: 50px; 
+        }
+        #call{
+        background: linear-gradient(to top, blue, orange); 
+        border-radius: 10px;
+        font-size: 20px;  
+        width: 80px;
+        height: 50px; 
+        float: left;
+        position: fixed;
+        left: 0;
+        color: aliceblue;
+        }
+        #name{
+        width: 95%;
+        height: 220px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        alert("Hello! My name is Iskandar. Nice to meet you.Do you like my web-site ?")
+    </script>
+    <div id="my">
+    <img src="https://m.media-amazon.com/images/I/41ONa5HOwfL._SX300_SY300_QL70_ML2_.jpg" height="150px" width="150px" id="image">
+    <h1> My name : Iskandar </h1>
+    <hr>
+    <h1>
+        My surname : Atajonov
+    </h1>
+    <form action="+998985777773">
+        <button id="call">Call me</button>
+        </form>
+    <hr>    
+    <h1>I am 11 years old</h1>
+    <hr>
+    <h1>I am a programmer</h1>
+    <hr>
+    <h1>Advice :</h1>
+    <input type="text"  maxlength="100">
+    <br>
+    <button id="btn" onclick="name()">Send</button>
+    <h1>I love this pictures :</h1>
+    <br>
+    <img src="https://wallpaperaccess.com/full/2381677.jpg" id="name">
+    <br>
+    <img src="https://wallpaperaccess.com/full/644364.jpg" id="name">
+    <br>
+    <img src="https://t3.ftcdn.net/jpg/05/29/37/22/360_F_529372232_2Z75XLUgwHQQmtsgeWwGdpdCx4inCPbP.jpg" id="name">
+    <br>
+    <img src="https://wallpaperaccess.com/full/1572479.jpg" id="name">
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqNUrq-FjcELTrTHa5SXOmJmxqlefYOrsSVyjrWLbCiKMGN8L7okraioE6jydvl35bisk&usqp=CAU" id="name">
+    </div>
+<div id="center">
+<h1>My other web-sites are : <a href="CALCULATER.html">"CALCULATER"</a> or <a href="time.html">"Digital clock"</a>
+<br>
+My school is in Urganch and I am studying <br> fifth class.I have very good classmates <br> so I like my school.My school is not <br> simple school,my school is Prezinetial school.
+<br>
+I know JS, CSS and HTML<br>JS   <progress min="0" max="100" value="68"></progress><br>CSS  <progress min="0" max="100" value="92"></progress><br>HTML  <progress min="0" max="100" value="98"></progress>
+<br>
+I like building web-sites because I know JS, CSS and HTML<br>This web-page is also built with JS, CSS and HTML<br>
+    <div id="df"></div>
+<script>
+     setInterval(times,1000)
+     function times() {
+        let time = new Date()
+        const hours = time.getHours()
+        const minutes = time.getMinutes()
+        const seconds = time.getSeconds()
+        df.innerHTML = ` ${hours} : ${minutes} : ${seconds} `
+     }
+</script> 
+    <marquee direction = "right"><h1><a href="https://t.me/+998985777773">My telegram desktop</a></h1></marquee>
+</h1>
+</div>
+</body>
+</html>

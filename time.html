@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME</title>
+    <style>
+        body{
+            text-align: center;
+            background-size: cover;
+        } 
+                #mar{
+            text-align: center ;
+            color: aliceblue;
+            text-shadow: 1px 1px 20px aqua ;
+            font-size: 100px;
+            font-weight: 600;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            animation-duration: 86400s; 
+            }
+        </style>
+</head>
+<body>
+    <div id="mar">
+    </div>
+        <script>
+        setInterval( times, 1000 )
+        function times(){
+            let time = new Date();                                                            
+            const hour = time.getHours();                                                       
+            const minute = time.getMinutes();                                               
+            const second = time.getSeconds();                                                     
+            let day = time.getDay();                                                       
+            let date = time.getDate();                                                 
+            let year = time.getFullYear();                                  
+             if( hour >= 1 && hour < 7 ){                        
+                document.body.style.backgroundImage = ' url("https://images.unsplash.com/photo-1509773896068-7fd415d91e2e?ixlib=rb-4.0.3&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb") '
+                document.body.style.backgroundSize = "cover"           
+            } else if ( hour >= 7 && hour <= 8 ){                    
+                document.body.style.backgroundImage = ' url("https://wallpaperaccess.com/full/299708.jpg") '
+                document.body.style.backgroundSize = "cover"                  
+            }                                               
+           else if( hour <= 11 && hour >= 9 ){                     
+                document.body.style.backgroundImage =  ' url("https://wallpaperaccess.com/full/644364.jpg") '
+                document.body.style.backgroundSize = "cover"                                         
+            } else if ( hour >= 12 && hour <= 15 ){                            
+                document.body.style.backgroundImage = 'url("https://w0.peakpx.com/wallpaper/502/776/HD-wallpaper-noon-time-sun-mountain-forest-cool-nature-fun-lake.jpg")'
+                document.body.style.backgroundSize = "cover"
+            }                                                                
+             else if ( hour >=16 && hour <= 17 ){
+                document.body.style.backgroundImage =  ' url("https://images.unsplash.com/photo-1577257107590-fc448601f16a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWZ0ZXJub29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80") ' 
+                document.body.style.backgroundSize = "cover"
+            } else if ( hour > 17 && hour <=24 ){
+               document.body.style.backgroundImage = ' url("https://wallpaperaccess.com/full/299708.jpg") '
+               document.body.style.backgroundSize = " cover "
+        };                                    
+        mar.innerHTML = ` ${hour} : ${minute} : ${second} `
+    }                                                
+    alert("THIS WEBSITE IS FOR COMPUTERS")
+            </script>
+</body>
+</html>  

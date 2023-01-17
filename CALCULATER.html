@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> CALCULATER </title>
+    <style>
+          
+     body {
+        text-align: center;
+        background:linear-gradient( to right,aqua,red ) ;
+     }
+     button{
+        background: linear-gradient( to right, black,white );
+        color: aliceblue;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 10px;
+     }
+     input{
+        background:linear-gradient( to right, yellow,green );
+        color: black;
+        border-radius: 10px;
+        font-family: initial;
+        font-size: 30px;
+     }
+     div{
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     h1{
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+
+    </style>
+</head>
+<body>
+   <div class="icon icon-disconnected" jseval="updateIconClass(this.classList, iconClass)" alt="" jstcache="2"></div>
+   <h1> KO'PAYTIRISH </h1> 
+  <input type="number" id="kop" placeholder="KO'PAYUVCHI"><h1>*</h1>
+  <input type="number" id="ko'p" placeholder="KO'PAYTUVCHI">
+  <button id="boli" onclick="boli()">=</button> <div id="result"></div>
+  <hr width="80%">
+
+  <script>
+   function boli(){
+    const n = document.getElementById("kop")
+    var n1 = document.getElementById("ko'p")
+    const res = n.value * n1.value 
+    result.textContent = ` = ${res} `
+   } 
+  </script>
+
+  <h1> BO'LISH </h1>
+  <input type="number" id="bol" placeholder="BO'LINUVCHI"><h1>/</h1>
+  <input type="number" id="bo'l" placeholder="BO'LUVCHI">
+  <button id="boll" onclick="boll()">=</button>  <div id="results"></div>
+  <hr width="80%">
+ 
+  <script>
+    function boll(){
+        const n = document.getElementById("bol")
+        let n1 = document.getElementById("bo'l")
+        var res = n.value / n1.value;
+        results.textContent = ` = ${res} `;
+    }
+  </script>
+
+  <h1>QO'SHISH</h1>
+  <input type="number" id="qosh" placeholder="QO'SHILUVCHI"><h1>+</h1>
+  <input type="number" id="qo'sh" placeholder="QO'SHUVCHI">
+  <button id="res" onclick="res()">=</button><div id="type"></div>
+  <hr width="80%">
+
+   <script>
+   function res(){
+    var x = document.getElementById("qosh"),
+          y = document.getElementById("qo'sh");
+        const n = parseFloat(x.value);
+         n2 = parseFloat(y.value); 
+         const  etr = n + n2;
+    type.textContent = ` = ${etr} `
+   }
+   </script>
+
+  <h1>AYIRISH</h1>
+  <input type="number" id="ay" placeholder="AYRILUVCHI"><h1>-</h1>
+  <input type="number" id="oy" placeholder="AYIRUVCHI">
+  <button id="vt" onclick="vt()">=</button>
+  <div id="resu"></div>
+  <hr width="80%">
+
+  <script>
+   function vt(){
+        const x = document.getElementById("ay");
+              y = document.getElementById("oy")
+        const a = parseFloat(x.value);
+              b = parseFloat(y.value)
+        const d = a - b 
+        resu.textContent = ` = ${d} `
+   }      
+  </script>
+
+  <h1>FOIZ</h1>
+  <input type="number" id="fa" placeholder="SON"><h1>%</h1>
+  <input type="number" id="hn" placeholder="FOIZI">
+  <button id="team" onclick="team()">=</button><div id="ty"></div>
+  <hr width="80%">
+  
+  <script>
+   function team(){
+      const n = document.getElementById("fa");
+            n1 = document.getElementById("hn");
+      const res = (n.value / 100) * n1.value;
+      ty.innerHTML = ` = ${res} `
+   }
+</script>
+</body>
+</html>
